@@ -29,7 +29,9 @@
             </router-link>
           </el-menu-item-group>
         </el-submenu>
-        <el-menu-item index="3"><i class="el-icon-menu"></i>状态</el-menu-item>
+        <router-link to="/status">
+          <el-menu-item index="3"><i class="el-icon-menu"></i>状态</el-menu-item>
+        </router-link>
         <router-link to="/aboutus">
           <el-menu-item index="4"><i class="el-icon-setting"></i>关于我们</el-menu-item>
         </router-link>
@@ -41,7 +43,8 @@
     <router-view></router-view> 
 
    </el-col >
-   <el-col>
+   <el-col :span="24">
+    <br><br><br>
     <hr>
     <hr>
     <center>
